@@ -1,0 +1,7 @@
+[FORMAT]
+
+max-line-length=130
+
+max-module-lines=1000
+
+disable=W0621,W0221,R0903,R0801,E0401,E0001
