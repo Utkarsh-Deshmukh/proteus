@@ -54,7 +54,8 @@ class Command:
         """
         try:
             for file in changed_or_staged_files:
-                subprocess.run(["mypy", file], check=True)
+                if os.path.splitext(file)[1] == ".py":
+                    subprocess.run(["mypy", file], check=True)
         except subprocess.CalledProcessError as err:
             print(f"Error while running mypy: {err}")
 
