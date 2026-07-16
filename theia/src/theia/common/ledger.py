@@ -3,7 +3,7 @@ from typing import Any, Callable, Dict, Optional
 
 
 class Ledger:
-    """Define the Ledger."""
+    """Define the Ledger. """
 
     def __init__(self, name: str) -> None:
         """Instantiate the Ledger.
